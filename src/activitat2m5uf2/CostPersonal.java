@@ -5,7 +5,7 @@ import java.util.Collection;
 
 public class CostPersonal {
 /**
- * Este metodo
+ * Este metodo recorre el array de trabajadores y va comprobando uno a uno 
  * @param treballadors
  * @return 
  */
