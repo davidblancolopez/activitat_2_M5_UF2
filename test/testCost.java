@@ -59,6 +59,6 @@ public class testCost {
         treballadors[3] = new Treballador("SUBDIRECTOR", 2000, 15);
         treballadors[4] = new Treballador("DIRECTOR", 2000, 15);
         
-        assertEquals(8000, activitat2m5uf2.CostPersonal.calculSouTreballador(treballadors) );
+        assertEquals(8000, activitat2m5uf2.CostPersonal.calculSouTreballador(treballadors), 0 );
     }
 }
