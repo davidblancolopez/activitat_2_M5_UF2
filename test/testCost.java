@@ -52,7 +52,7 @@ public class testCost {
         Treballador[] treballadors = new Treballador[5];
         
         for (int i = 0; i < 2; i++) {
-            treballadors[i] = new Treballador("trabajador", 1000, 15);
+            treballadors[i] = new Treballador("TRABAJADOR", 1000, 15);
         }
         
         treballadors[2] = new Treballador("DIRECTOR", 2000, 15);

@@ -29,8 +29,4 @@ public class CostPersonal {
 		return costFinal;
     }
     
-    public static void calcularSouTreballador (){
-        
-    }
-    
 }
