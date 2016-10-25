@@ -12,19 +12,25 @@ public class CostPersonal {
  * @param treballadors
  * @return 
  */
-    public static float CostDelPersonal(Treballador treballadors[]) {
+    public static float calculSouTreballador(Treballador treballadors[]) {
 		float costFinal = 0;
 		Treballador treballador;
 		
 		for (int i = 0; i < treballadors.length; i++) {
 			
-			if (treballadors[i].getTipusTreballador() == Treballador.DIRECTOR || \
+			if (treballadors[i].getTipusTreballador() == Treballador.DIRECTOR || 
 			treballadors[i].getTipusTreballador() == Treballador.SUBDIRECTOR) {
 				costFinal = costFinal + treballadors[i].getNomina();
 			} else {
-				costFinal = costFinal + treballador.getNomina() + \
+				costFinal = costFinal + treballador.getNomina() + 
 					(treballador.getHoresExtres() * 20);
 			}
 		}
 		return costFinal;
-	}
+    }
+    
+    public static void calcularSouTreballador (){
+        
+    }
+    
+}
