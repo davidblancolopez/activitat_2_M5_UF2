@@ -14,7 +14,7 @@ public class CostPersonal {
  */
     public static float calculSouTreballador(Treballador treballadors[]) {
 		float costFinal = 0;
-		Treballador treballador;
+		Treballador treballador = null;
 		
 		for (int i = 0; i < treballadors.length; i++) {
 			

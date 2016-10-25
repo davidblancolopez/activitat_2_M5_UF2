@@ -48,7 +48,15 @@ public class testCost {
     //Test de calculSouTreballador que devolvera el coste de ese trabajador.
     @Test
     public final void testCost1() {
-        //fail ("Sin implementar");
+        Treballador[] treballadors = new Treballador[5];
+        
+        for (int i = 0; i < 2; i++) {
+            treballadors[i] = new Treballador("trabajador", 1000, 15);
+        }
+        
+        treballadors[2] = new Treballador("DIRECTOR", 2000, 15);
+        treballadors[3] = new Treballador("SUBDIRECTOR", 2000, 15);
+        treballadors[4] = new Treballador("DIRECTOR", 2000, 15);
         
         assertEquals( );
     }
