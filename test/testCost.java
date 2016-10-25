@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import activitat2m5uf2.Treballador;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -58,6 +59,6 @@ public class testCost {
         treballadors[3] = new Treballador("SUBDIRECTOR", 2000, 15);
         treballadors[4] = new Treballador("DIRECTOR", 2000, 15);
         
-        assertEquals( );
+        assertEquals(8000, activitat2m5uf2.CostPersonal.calculSouTreballador(treballadors) );
     }
 }
