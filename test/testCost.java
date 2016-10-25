@@ -45,5 +45,11 @@ public class testCost {
     
     
     
-    
+    //Test de calculSouTreballador que devolvera el coste de ese trabajador.
+    @Test
+    public final void testCost1() {
+        //fail ("Sin implementar");
+        
+        assertEquals( );
+    }
 }
