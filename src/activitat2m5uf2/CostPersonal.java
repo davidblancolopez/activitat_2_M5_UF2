@@ -17,6 +17,7 @@ public class CostPersonal {
 		Treballador treballador = null;
 		
 		for (int i = 0; i < treballadors.length; i++) {
+                    
 			
 			if (treballadors[i].getTipusTreballador() == Treballador.DIRECTOR || 
 			treballadors[i].getTipusTreballador() == Treballador.SUBDIRECTOR) {
@@ -29,11 +30,6 @@ public class CostPersonal {
 		return costFinal;
     }
     
-    public static float calculSou(){
-        float sueldo = 0;
-        
-        return sueldo;
-    }
     
     
 }
