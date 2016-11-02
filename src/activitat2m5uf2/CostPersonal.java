@@ -29,7 +29,11 @@ public class CostPersonal {
 		return costFinal;
     }
     
-   
+    public static float calculSou(){
+        float sueldo = 0;
+        
+        return sueldo;
+    }
     
     
 }
