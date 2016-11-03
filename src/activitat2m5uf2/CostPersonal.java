@@ -37,9 +37,10 @@ public class CostPersonal {
      */
     public static int tipusTreballador(Treballador treballador){
         int tipus;
-        if (treballador.getTipusTreballador() == Treballador.DIRECTOR || 
-            treballador.getTipusTreballador() == Treballador.SUBDIRECTOR) {
+        if (treballador.getTipusTreballador() == Treballador.DIRECTOR) {
             tipus = treballador.DIRECTOR;
+        }else if(treballador.getTipusTreballador() == Treballador.SUBDIRECTOR){
+            tipus = treballador.SUBDIRECTOR;
         }else{
             tipus = treballador.NORMAL;
         }

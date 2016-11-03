@@ -72,14 +72,14 @@ public class testCost {
     
     
     
-    //Se espera 0 perque es el numero que s'assigna als directors i subdirectors.
+    //Se espera 1 perque es el numero que s'assigna als sbdirectors.
     @Test
     public final void tipusTreballador1() {
         
        Treballador treballador = new Treballador(1, 1000, 15);
         
         
-        assertEquals(0, CostPersonal.tipusTreballador(treballador));
+        assertEquals(1, CostPersonal.tipusTreballador(treballador));
     }
     
     
