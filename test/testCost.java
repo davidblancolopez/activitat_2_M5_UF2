@@ -47,7 +47,7 @@ public class testCost {
     
     
     
-    //Test de calculSouTreballador que devolvera el coste de ese trabajador.
+    //Test de calculSouTreballador que devolvera el coste de los trabajadores.
     
     @Test
     public final void testCost1() {
@@ -72,7 +72,7 @@ public class testCost {
     
     
     
-    //Se espera 1 perque es el numero que s'assigna als sbdirectors.
+    //Se espera 1 perque es el numero que s'assigna als subdirectors.
     @Test
     public final void tipusTreballador1() {
         
@@ -128,7 +128,7 @@ public class testCost {
     
     
     
-    //Se espera 2 perque es el numero que s'assigna als treballadors normals.
+    //Se espera 2300,00 perque es el numero que es calculara amb el treballador introduit.
     @Test
     public final void costFinal1() {
         
@@ -142,7 +142,7 @@ public class testCost {
     
     
     
-    //Se espera 2 perque es el numero que s'assigna als treballadors normals.
+    //Se espera 2000,00 perque es el numero que es calculara amb aquest treballador.
     @Test
     public final void costFinal2() {
         
