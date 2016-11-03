@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import activitat2m5uf2.CostPersonal;
 import activitat2m5uf2.Treballador;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -47,6 +48,7 @@ public class testCost {
     
     
     //Test de calculSouTreballador que devolvera el coste de ese trabajador.
+    
     @Test
     public final void testCost1() {
         Treballador[] treballadors = new Treballador[3];
@@ -58,4 +60,108 @@ public class testCost {
         
         assertEquals(5300, activitat2m5uf2.CostPersonal.calculSouTreballador(treballadors), 0 );
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //Se espera 0 perque es el numero que s'assigna als directors i subdirectors.
+    @Test
+    public final void tipusTreballador1() {
+        
+       Treballador treballador = new Treballador(1, 1000, 15);
+        
+        
+        assertEquals(0, CostPersonal.tipusTreballador(treballador));
+    }
+    
+    
+    
+    
+    //Se espera 0 perque es el numero que s'assigna als directors i subdirectors.
+    @Test
+    public final void tipusTreballador2() {
+        
+       Treballador treballador = new Treballador(0, 2000, 15);
+        
+        
+        assertEquals(0, CostPersonal.tipusTreballador(treballador));
+    }
+    
+    
+    
+    
+    
+    //Se espera 2 perque es el numero que s'assigna als treballadors normals.
+    @Test
+    public final void tipusTreballador3() {
+        
+       Treballador treballador = new Treballador(2, 2000, 15);
+        
+        
+        assertEquals(2, CostPersonal.tipusTreballador(treballador));
+    }
+    
+    
+    
+    
+    /*
+    //Esta prueba dara error porque no existe un puesto que sea 3
+    @Test
+    public final void tipusTreballador4() {
+        
+       Treballador treballador = new Treballador(3, 2000, 15);
+        
+        
+        assertEquals( , CostPersonal.tipusTreballador(treballador));
+    }
+    */
+    
+    
+    
+    
+    
+    //Se espera 2 perque es el numero que s'assigna als treballadors normals.
+    @Test
+    public final void costFinal1() {
+        
+       Treballador treballador = new Treballador(2, 2000, 15);
+       int num = 2;
+        
+        assertEquals(2300,00, CostPersonal.costFinal(treballador, num));
+    }
+    
+    
+    
+    
+    
+    //Se espera 2 perque es el numero que s'assigna als treballadors normals.
+    @Test
+    public final void costFinal2() {
+        
+       Treballador treballador = new Treballador(2, 2000, 15);
+       int num = 0;
+        
+        assertEquals(2000,00, CostPersonal.costFinal(treballador, num));
+    }
+    
+    
+    
+    /*
+    //Se espera error perque el numero 3 no s'utilitza amb cap treballador.
+    @Test
+    public final void costFinal3() {
+        
+       Treballador treballador = new Treballador(2, 2000, 15);
+       int num = 2;
+        
+        assertEquals(2300, CostPersonal.tipusTreballador(treballador));
+    }*/
 }

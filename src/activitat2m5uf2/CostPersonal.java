@@ -35,7 +35,7 @@ public class CostPersonal {
      * @param treballador
      * @return 
      */
-    static int tipusTreballador(Treballador treballador){
+    public static int tipusTreballador(Treballador treballador){
         int tipus;
         if (treballador.getTipusTreballador() == Treballador.DIRECTOR || 
             treballador.getTipusTreballador() == Treballador.SUBDIRECTOR) {
