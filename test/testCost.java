@@ -49,16 +49,13 @@ public class testCost {
     //Test de calculSouTreballador que devolvera el coste de ese trabajador.
     @Test
     public final void testCost1() {
-        Treballador[] treballadors = new Treballador[5];
+        Treballador[] treballadors = new Treballador[3];
         
-        for (int i = 0; i < 2; i++) {
-            treballadors[i] = new Treballador(1, 1000, 15);
-        }
+        treballadors[0] = new Treballador(1, 1000, 15);
+        treballadors[1] = new Treballador(0, 2000, 15);
+        treballadors[2] = new Treballador(2, 2000, 15);
+        //treballadors[3] = new Treballador(3, 2000, 15); //AQUEST DONARA ERROR PERUQE NO HI HA CAP LLOC AMB EL NUMERO 3
         
-        treballadors[2] = new Treballador(0, 2000, 15);
-        treballadors[3] = new Treballador(1, 2000, 15);
-        treballadors[4] = new Treballador(0, 2000, 15);
-        
-        assertEquals(8000, activitat2m5uf2.CostPersonal.calculSouTreballador(treballadors), 0 );
+        assertEquals(5300, activitat2m5uf2.CostPersonal.calculSouTreballador(treballadors), 0 );
     }
 }

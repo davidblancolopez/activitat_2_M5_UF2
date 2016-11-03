@@ -14,6 +14,7 @@ public class CostPersonal {
  */
     
     private static float costFinal = 0;
+    private static final int preuHoresExtra = 20;
     
     public static float calculSouTreballador(Treballador treballadors[]) {
                 
@@ -55,7 +56,7 @@ public class CostPersonal {
         if (num == treballador.DIRECTOR || num == treballador.SUBDIRECTOR) {
             costFinal = costFinal + treballador.getNomina();
         }else{
-            costFinal = costFinal + treballador.getNomina() + (treballador.getHoresExtres() * 20);
+            costFinal = costFinal + treballador.getNomina() + (treballador.getHoresExtres() * preuHoresExtra);
         }
     return costFinal;
     }
