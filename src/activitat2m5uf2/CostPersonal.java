@@ -12,24 +12,51 @@ public class CostPersonal {
  * @param treballadors
  * @return 
  */
+    
+    private static float costFinal = 0;
+    
     public static float calculSouTreballador(Treballador treballadors[]) {
-		float costFinal = 0;
+                
+		
 		Treballador treballador = null;
 		
 		for (int i = 0; i < treballadors.length; i++) {
-                    
-			
-			if (treballadors[i].getTipusTreballador() == Treballador.DIRECTOR || 
-			treballadors[i].getTipusTreballador() == Treballador.SUBDIRECTOR) {
-				costFinal = costFinal + treballadors[i].getNomina();
-			} else {
-				costFinal = costFinal + treballador.getNomina() + 
-					(treballador.getHoresExtres() * 20);
-			}
+                        treballador = treballadors[i];
+			int tipusTreballador = tipusTreballador(treballador);
+                        costFinal = costFinal(treballador, tipusTreballador);
 		}
 		return costFinal;
     }
     
+    /**
+     * Este metodo devuelve el tipo de trabajador que es con un INT si es director 
+     * o subdirectori será 1 si es empleado normal es 2.
+     * @param treballador
+     * @return 
+     */
+    static int tipusTreballador(Treballador treballador){
+        int tipus;
+        if (treballador.getTipusTreballador() == Treballador.DIRECTOR || 
+            treballador.getTipusTreballador() == Treballador.SUBDIRECTOR) {
+            tipus = treballador.DIRECTOR;
+        }else{
+            tipus = treballador.NORMAL;
+        }
+        
+        return tipus;
+    }
     
     
+    
+ 
+    
+    public static float costFinal(Treballador treballador, int num){
+
+        if (num == treballador.DIRECTOR || num == treballador.SUBDIRECTOR) {
+            costFinal = costFinal + treballador.getNomina();
+        }else{
+            costFinal = costFinal + treballador.getNomina() + (treballador.getHoresExtres() * 20);
+        }
+    return costFinal;
+    }
 }

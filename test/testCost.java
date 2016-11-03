@@ -52,12 +52,12 @@ public class testCost {
         Treballador[] treballadors = new Treballador[5];
         
         for (int i = 0; i < 2; i++) {
-            treballadors[i] = new Treballador("TRABAJADOR", 1000, 15);
+            treballadors[i] = new Treballador(1, 1000, 15);
         }
         
-        treballadors[2] = new Treballador("DIRECTOR", 2000, 15);
-        treballadors[3] = new Treballador("SUBDIRECTOR", 2000, 15);
-        treballadors[4] = new Treballador("DIRECTOR", 2000, 15);
+        treballadors[2] = new Treballador(0, 2000, 15);
+        treballadors[3] = new Treballador(1, 2000, 15);
+        treballadors[4] = new Treballador(0, 2000, 15);
         
         assertEquals(8000, activitat2m5uf2.CostPersonal.calculSouTreballador(treballadors), 0 );
     }
