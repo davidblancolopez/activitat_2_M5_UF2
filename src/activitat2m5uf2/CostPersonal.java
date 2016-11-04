@@ -51,7 +51,13 @@ public class CostPersonal {
     
     
  
-    
+    /**
+     * El metodo devuelve el coste final de los trabajadores, segun el tipo de trabajador que
+     * sea se añadiran las horas extra o no en ese coste.
+     * @param treballador
+     * @param num
+     * @return 
+     */
     public static float costFinal(Treballador treballador, int num){
 
         if (num == treballador.DIRECTOR || num == treballador.SUBDIRECTOR) {
